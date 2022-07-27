@@ -1,0 +1,40 @@
+<div class="grid justify-center mt-4">
+  <div class="card shadow-2xl light bg-black">
+    <div class="card-body">
+      <div class="card-title">
+        CRUD <span class="text-primary" >ACTIVIDADES</span>
+      </div>
+      <div class="divider"> </div>
+      <div class="grid">
+        <label for="">Nombre:</label>
+        <input class="input input-primary" type="text" name="" id="" placeholder="Ejemplo: Actividad" [(ngModel)]="currentActivity.name">
+        <label for="">Categoria</label>
+        <input class="input input-primary" type="text" name="" id="" placeholder="Ejemplo: 123456" [(ngModel)]="currentActivity.category">
+        <div class="form-control">
+          <label class="label cursor-pointer justify-start">
+            <input type="checkbox" class="toggle toggle-primary" [(ngModel)]="currentActivity.enable"/>
+            <span class="label-text ml-2">Activo</span>
+          </label>
+        </div>
+        <label for="">Fecha  Creaccion:</label>
+        <input class="input input-primary" type="date" name="" id="" [(ngModel)]="currentActivity.created">
+        <label for="">Fecha Actualizacion:</label>
+        <input class="input input-primary" type="date" name="" id="" [(ngModel)]="currentActivity.updated">
+      </div>
+      <div class="card-actions">
+        <button class="btn btn-primary btn-sm" (click)="save()">Guardar</button>
+        <button class="btn btn-sm">Cancelar</button>
+      </div>
+    </div>
+  </div>
+  <div class="card card-compact  bg-yellow-700 shadow-black">
+    <div class="card-body">
+      <div class="card-title">Peligro</div>
+    </div>
+    <p class="text-xs p-4" >Recuerde que luego de la eliminación no podrá recuperar la data</p>
+    <div class="card-actions justify-end ">
+      <button class="btn btn-warning btn-sm m-4" (click)="delete()" >Eliminar</button>
+    </div>
+  </div>
+</div>
+

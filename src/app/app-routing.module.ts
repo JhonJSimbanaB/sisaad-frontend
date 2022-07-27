@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CategoryComponent } from './category/category.component';
+import { ActivityComponent } from './feature/activity/activity.component';
 
 const routes: Routes = [
-  {path: 'category', component: CategoryComponent},
-  {path: 'category/:id', component:CategoryComponent}
+  {path: 'activity', component:ActivityComponent},
+  {path: 'activity/:id', component:ActivityComponent}
 ];
 
 @NgModule({

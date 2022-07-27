@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sisaad-frontend": {
+    "crm-frontend": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sisaad-frontend",
+            "outputPath": "dist/crm-frontend",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sisaad-frontend:build:production"
+              "browserTarget": "crm-frontend:build:production"
             },
             "development": {
-              "browserTarget": "sisaad-frontend:build:development"
+              "browserTarget": "crm-frontend:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sisaad-frontend:build"
+            "browserTarget": "crm-frontend:build"
           }
         },
         "test": {
@@ -99,6 +99,6 @@
     }
   },
   "cli": {
-    "analytics": "1d42d452-bb70-4248-ac28-d88257d44558"
+    "analytics": "189cd67e-6958-4a59-b457-2118ce40f6f4"
   }
 }
