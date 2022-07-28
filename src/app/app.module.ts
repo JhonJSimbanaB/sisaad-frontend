@@ -1,25 +1,15 @@
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule} from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-<<<<<<< HEAD
-import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent
-=======
-import { ActivityComponent } from './feature/activity/activity.component';
-
-@NgModule({
-  declarations: [
-    AppComponent,
-    ActivityComponent
->>>>>>> activity
   ],
   imports: [
     BrowserModule,

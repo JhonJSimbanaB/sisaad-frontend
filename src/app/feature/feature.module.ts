@@ -8,6 +8,7 @@ import { CategoryListComponent } from './category/list/category-list.component';
 import { CategoryToolbarComponent } from './category/toolbar/category-toolbar.component';
 import { CityComboboxComponent } from './city/city-combobox.component';
 import { AuthoritySearchComponent } from './authority/authority-search/authority-search.component';
+import { ActivityComponent } from './activity/activity.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AuthoritySearchComponent } from './authority/authority-search/authority
     CategoryListComponent,
     CategoryToolbarComponent,
     CityComboboxComponent,
+    ActivityComponent,
     AuthoritySearchComponent
   ],
   imports: [
