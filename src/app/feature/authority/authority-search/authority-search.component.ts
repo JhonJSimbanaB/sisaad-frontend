@@ -4,35 +4,29 @@ import { AuthorityService } from '../authority.service';
 
 @Component({
   selector: 'app-authority-search',
-  templateUrl: './authority-search.component.html'
+  templateUrl: './authority-search.component.html',
 })
 export class AuthoritySearchComponent implements OnInit {
-
-  constructor(
-    private authorityService: AuthorityService
-  ) { }
+  constructor(private authorityService: AuthorityService) {}
 
   authorities: Authority[] = [];
 
   @Output() authorityEmitter = new EventEmitter<Authority>();
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  onInput(term: string):void {
-    if (term.length>=2){
-      this.authorityService.findByName(term).subscribe(
-        (response) => this.authorities = response
-      )
+  onInput(term: string): void {
+    if (term.length >= 2) {
+      this.authorityService
+        .findByName(term)
+        .subscribe((response) => (this.authorities = response));
     }
-    if (term.length===0){
+    if (term.length === 0) {
       this.authorities = [];
     }
-
   }
 
-  onSelect(authority: Authority):void {
+  onSelect(authority: Authority): void {
     this.authorityEmitter.emit(authority);
   }
-
 }
