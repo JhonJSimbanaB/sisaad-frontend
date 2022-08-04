@@ -8,7 +8,7 @@ export interface Category {
   enabled: boolean,
   archived: boolean,
 
-  cityId: number,
+  activityId: number,
   authorities: Authority[]
 
 }

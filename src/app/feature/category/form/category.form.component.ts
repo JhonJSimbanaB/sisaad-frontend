@@ -26,7 +26,7 @@ export class CategoryFormComponent implements OnInit {
     created: new Date(),
     enabled: true,
     archived: true,
-    cityId: 0,
+    activityId: 0,
     authorities: []
   };
 
@@ -53,7 +53,7 @@ export class CategoryFormComponent implements OnInit {
           created: new Date(),
           enabled: true,
           archived: true,
-          cityId: 0,
+          activityId: 0,
           authorities: []
         };
         this.router.navigate(['/layout/category-list']);
