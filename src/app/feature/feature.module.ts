@@ -8,7 +8,9 @@ import { CategoryListComponent } from './category/list/category-list.component';
 import { CategoryToolbarComponent } from './category/toolbar/category-toolbar.component';
 import { CityComboboxComponent } from './city/city-combobox.component';
 import { AuthoritySearchComponent } from './authority/authority-search/authority-search.component';
-import { ActivityComponent } from './activity/activity.component';
+import { ActivityFormComponent } from './activity/form/activity.form.component';
+import { ActivityListComponent } from './activity/list/activity-list.component';
+import { ActivityToolbarComponent } from './activity/toolbar/activity-toolbar.component';
 
 
 @NgModule({
@@ -17,8 +19,10 @@ import { ActivityComponent } from './activity/activity.component';
     CategoryListComponent,
     CategoryToolbarComponent,
     CityComboboxComponent,
-    ActivityComponent,
-    AuthoritySearchComponent
+    ActivityFormComponent,
+    AuthoritySearchComponent,
+    ActivityListComponent,
+    ActivityToolbarComponent
   ],
   imports: [
     CommonModule,

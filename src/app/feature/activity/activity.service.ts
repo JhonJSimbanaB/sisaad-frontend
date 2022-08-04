@@ -33,4 +33,12 @@ export class ActivityService {
       return this.http.delete<void>(this.url+"/delete/"+id, this.httpOptions);
     }
 
+    public findAll(): Observable<Activity[]>{
+      return this.http.get<Activity[]>(this.url+"/findAll", this.httpOptions)
+    }
+
+    public findByName(term: string): Observable<Activity[]>{
+      return this.http.get<Activity[]>(this.url+"/findByName/"+term, this.httpOptions)
+    }
+
 }
