@@ -1,6 +1,6 @@
 <select #selectActivity (change)="onSelect(selectActivity.value)" class="select select-primary" name="" id="">
   <option value=0 selected disabled>Seleccione</option>
-  <option *ngFor="let activity of activities" [value]="activity.id" [selected]="activity.id === activityId">
+  <option *ngFor="let activity of activities" [value]="activity.activityId" [selected]="activity.activityId === activityId">
     {{activity.name}}
   </option>
 </select>
